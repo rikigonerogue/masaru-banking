@@ -1,4 +1,4 @@
-package com.sda.masarubanking.Service;
+package com.sda.masarubanking.service;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.sda.masarubanking.Service;
+package com.sda.masarubanking.service;
 
 public interface AccountService {
     void checkBalance();

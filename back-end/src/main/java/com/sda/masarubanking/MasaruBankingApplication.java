@@ -1,6 +1,6 @@
-package com.sda.masarubanking.Main;
+package com.sda.masarubanking;
 
-import com.sda.masarubanking.Service.BankingService;
+import com.sda.masarubanking.service.BankingService;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
@@ -11,3 +11,4 @@ public class MasaruBankingApplication {
 		bankingService.start();
 	}
 }
+
