@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94b43b8c-e848-4a49-b528-1e301f0ec558" name="Changes" comment="AccountService, BankingService, SavingsService was created">
-      <change afterPath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/service/BankingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/service/SavingsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/MasarubankingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/MasaruBankingApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/MasarubankingApplication.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../masaru-banking\exportToHTML" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -42,11 +43,18 @@
     "accountId": "ef1ab64b-d433-492c-96fb-aa0a9d896a7f"
   }
 }]]></component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 6
 }]]></component>
   <component name="ProjectId" id="2gMJTxfbAJbGCHJoYoofeEOQm0Z" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -64,11 +72,11 @@
 }]]></component>
   <component name="RunManager">
     <configuration name="MasaruBankingApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sda.masarubanking.MasaruBankingApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.sda.masarubanking.Main.MasaruBankingApplication" />
       <module name="masarubanking" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sda.masarubanking.*" />
+          <option name="PATTERN" value="com.sda.masarubanking.Main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715502384373</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="AccountService, BankingService, SavingsService was created">
+      <option name="closed" value="true" />
+      <created>1715506669355</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715506669355</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
