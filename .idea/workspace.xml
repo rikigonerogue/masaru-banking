@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94b43b8c-e848-4a49-b528-1e301f0ec558" name="Changes" comment="AccountService, BankingService, SavingsService was created">
+    <list default="true" id="94b43b8c-e848-4a49-b528-1e301f0ec558" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/Main/MasaruBankingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/MasaruBankingApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/Service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/Service/BankingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/service/BankingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/Service/SavingsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/service/SavingsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/service/BankingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/service/BankingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -68,12 +68,17 @@
   &quot;keyToString&quot;: {
     &quot;Application.MasaruBankingApplication.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/JAVAREMOTE30EE_HTML_CSS_JAVASCRIPT_TRUE/Orion_bank-master&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/projects/masaru-banking/front-end&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.sda.masarubanking" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\projects\masaru-banking\back-end\src\main\resources\db" />
     </key>
@@ -142,7 +147,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715508971207</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="renamed files, moved files to proper locations.">
+      <option name="closed" value="true" />
+      <created>1715515338720</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715515338720</updated>
+    </task>
+    <task id="LOCAL-00006" summary="renamed files, moved files to proper locations.">
+      <option name="closed" value="true" />
+      <created>1715515423619</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715515423619</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,6 +198,7 @@
     <MESSAGE value="initial project structure" />
     <MESSAGE value="DDL file was created" />
     <MESSAGE value="AccountService, BankingService, SavingsService was created" />
-    <option name="LAST_COMMIT_MESSAGE" value="AccountService, BankingService, SavingsService was created" />
+    <MESSAGE value="renamed files, moved files to proper locations." />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed files, moved files to proper locations." />
   </component>
 </project>
