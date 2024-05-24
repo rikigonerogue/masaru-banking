@@ -1,83 +1,60 @@
 package com.sda.masarubanking.service;
 
-import java.util.Scanner;
+import com.sda.masarubanking.entity.Account;
+import com.sda.masarubanking.entity.Savings;
+import com.sda.masarubanking.repository.AccountRepository;
+import com.sda.masarubanking.repository.SavingsRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-public class BankingService implements AccountService {
-    private double balance = 0;
-    private Scanner scanner;
+@Service
+public class BankingService {
 
-    @Override
-    public void checkBalance() {
-        System.out.println("Your current balance is $" + balance);
+    @Autowired
+    private AccountRepository accountRepository;
+
+    @Autowired
+    private SavingsRepository savingsRepository;
+
+    // Account methods
+    public double checkAccountBalance(Long accountId) {
+        Account account = accountRepository.findById(accountId).orElseThrow(() -> new RuntimeException("Account not found"));
+        return account.getBalance();
     }
 
-    @Override
-    public void deposit(double amount) {
-        balance += amount;
-        System.out.println("$" + amount + " has been deposited to your account.");
-        checkBalance();
+    public void depositToAccount(Long accountId, double amount) {
+        Account account = accountRepository.findById(accountId).orElseThrow(() -> new RuntimeException("Account not found"));
+        account.setBalance(account.getBalance() + amount);
+        accountRepository.save(account);
     }
 
-    @Override
-    public void withdraw(double amount) {
-        if (amount > balance) {
-            System.out.println("Insufficient funds...");
-        } else {
-            balance -= amount;
-            System.out.println("$" + amount + " has been withdrawn from your account.");
-            checkBalance();
+    public void withdrawFromAccount(Long accountId, double amount) {
+        Account account = accountRepository.findById(accountId).orElseThrow(() -> new RuntimeException("Account not found"));
+        if (account.getBalance() < amount) {
+            throw new RuntimeException("Insufficient funds");
         }
+        account.setBalance(account.getBalance() - amount);
+        accountRepository.save(account);
     }
 
-    public void start() {
-        scanner = new Scanner(System.in);
-        int option = 0;
-        while (option != 5) {
-            displayMenu();
-            option = scanner.nextInt();
-            switch (option) {
-                case 1:
-                    checkBalance();
-                    break;
-                case 2:
-                    System.out.print("Enter the amount to deposit: $");
-                    double depositAmount = scanner.nextDouble();
-                    deposit(depositAmount);
-                    break;
-                case 3:
-                    System.out.print("Enter the amount to withdraw: $");
-                    double withdrawAmount = scanner.nextDouble();
-                    withdraw(withdrawAmount);
-                    break;
-                case 4:
-                    manageSavings();
-                    break;
-                case 5:
-                    exit();
-                    break;
-                default:
-                    System.out.println("Invalid option. Try again.");
-            }
+    // Savings methods
+    public double checkSavingsBalance(Long savingsId) {
+        Savings savings = savingsRepository.findById(savingsId).orElseThrow(() -> new RuntimeException("Savings account not found"));
+        return savings.getBalance();
+    }
+
+    public void depositToSavings(Long savingsId, double amount) {
+        Savings savings = savingsRepository.findById(savingsId).orElseThrow(() -> new RuntimeException("Savings account not found"));
+        savings.setBalance(savings.getBalance() + amount);
+        savingsRepository.save(savings);
+    }
+
+    public void withdrawFromSavings(Long savingsId, double amount) {
+        Savings savings = savingsRepository.findById(savingsId).orElseThrow(() -> new RuntimeException("Savings account not found"));
+        if (savings.getBalance() < amount) {
+            throw new RuntimeException("Insufficient funds");
         }
-    }
-
-    private void displayMenu() {
-        System.out.println("\nWelcome to Masaru Banking!\n");
-        System.out.println("1. Check Balance");
-        System.out.println("2. Deposit");
-        System.out.println("3. Withdraw");
-        System.out.println("4. Manage Savings");
-        System.out.println("5. Exit");
-        System.out.print("\nEnter an option: ");
-    }
-
-    private void manageSavings() {
-        SavingsService savingsService = new SavingsService();
-        savingsService.manageSavings();
-    }
-
-    private void exit() {
-        System.out.println("Thank you for banking with Masaru. Have a great day!");
-        System.exit(0);
+        savings.setBalance(savings.getBalance() - amount);
+        savingsRepository.save(savings);
     }
 }
