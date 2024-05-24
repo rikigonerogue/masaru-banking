@@ -34,7 +34,7 @@ public class UserService {
         if (user != null) {
             user.setResetToken(UUID.randomUUID().toString());
             userRepository.save(user);
-            // Send email with reset token (implementation not shown)
+
         }
     }
 

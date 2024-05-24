@@ -16,7 +16,7 @@ public class BankingService {
     @Autowired
     private SavingsRepository savingsRepository;
 
-    // Account methods
+
     public double checkAccountBalance(Long accountId) {
         Account account = accountRepository.findById(accountId).orElseThrow(() -> new RuntimeException("Account not found"));
         return account.getBalance();
