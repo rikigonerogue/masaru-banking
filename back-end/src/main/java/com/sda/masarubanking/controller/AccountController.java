@@ -1,29 +1,37 @@
 package com.sda.masarubanking.controller;
 
 
+import com.sda.masarubanking.dto.AccountDTO;
 import com.sda.masarubanking.entity.Account;
 import com.sda.masarubanking.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
-@RequestMapping("/api/banking/account")
+@RequestMapping("/api/banking/accounts")
 public class AccountController {
 
     @Autowired
     private AccountService accountService;
 
-    @GetMapping("/{accountId}/balance1")
+    @GetMapping("")
+    public List<AccountDTO> getAll() {
+        return null;
+    }
+
+    @GetMapping("/{accountId}/")
     public Account getAccount(@PathVariable Long accountId) {
         return accountService.getAccountById(accountId);
     }
 
-    @PostMapping("/{accountId}/deposit1")
+    @PostMapping("/{accountId}/deposit")
     public void deposit(@PathVariable Long accountId, @RequestBody Double amount) {
         accountService.deposit(accountId, amount);
     }
 
-    @PostMapping("/{accountId}/withdraw1")
+    @PostMapping("/{accountId}/withdraw")
     public void withdraw(@PathVariable Long accountId, @RequestBody Double amount) {
         accountService.withdraw(accountId, amount);
     }

@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94b43b8c-e848-4a49-b528-1e301f0ec558" name="Changes" comment="">
+    <list default="true" id="94b43b8c-e848-4a49-b528-1e301f0ec558" name="Changes" comment="Migration from CLI -&gt; RestAPI (i think). Added SecurityConfig. Updated Controller, DTO, Entity, Repository and Service packages.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/service/BankingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/service/BankingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/MasaruBankingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/MasaruBankingApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/controller/BankingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/controller/BankingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/controller/SavingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/controller/SavingsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/sda/masarubanking/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

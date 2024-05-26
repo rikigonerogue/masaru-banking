@@ -4,12 +4,12 @@ package com.sda.masarubanking;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-/* TODO -
+/* TODO - controller should get DTO
+controller validates the DTO
+controller passes DTO to service
+Service calls the converter to convert DTO into entity (usually conversion in converter, which is autowired in service)
+service calls the repository to persist entity into the database
 
-1. create front-end
-2. config server connection
-3. spring sec for credentials
-4. make that shit look good
 
 */
 
@@ -23,4 +23,9 @@ public class MasaruBankingApplication {
 	}
 }
 
+/* TODO
+    	- create endpoint to create acc using DTO,
+ 		- implement method getAllAccounts,
+ 		- verify using postman.
 
+ */

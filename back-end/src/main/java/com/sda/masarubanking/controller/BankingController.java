@@ -12,17 +12,17 @@ public class BankingController {
     private BankingService bankingService;
 
 
-    @GetMapping("/account/{accountId}/balance2")
+    @GetMapping("/account/{accountId}/balance")
     public double checkAccountBalance(@PathVariable Long accountId) {
         return bankingService.checkAccountBalance(accountId);
     }
 
-    @PostMapping("/account/{accountId}/deposit2")
+    @PostMapping("/account/{accountId}/deposit")
     public void depositToAccount(@PathVariable Long accountId, @RequestBody Double amount) {
         bankingService.depositToAccount(accountId, amount);
     }
 
-    @PostMapping("/account/{accountId}/withdraw2")
+    @PostMapping("/account/{accountId}/withdraw")
     public void withdrawFromAccount(@PathVariable Long accountId, @RequestBody Double amount) {
         bankingService.withdrawFromAccount(accountId, amount);
     }

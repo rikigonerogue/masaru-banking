@@ -11,17 +11,17 @@ public class SavingsController {
     @Autowired
     private SavingsService savingsService;
 
-    @GetMapping("/{savingsId}/balance3")
+    @GetMapping("/{savingsId}/balance")
     public double checkSavingsBalance(@PathVariable Long savingsId) {
         return savingsService.checkSavingsBalance(savingsId);
     }
 
-    @PostMapping("/{savingsId}/deposit3")
+    @PostMapping("/{savingsId}/deposit")
     public void depositToSavings(@PathVariable Long savingsId, @RequestBody Double amount) {
         savingsService.depositToSavings(savingsId, amount);
     }
 
-    @PostMapping("/{savingsId}/withdraw3")
+    @PostMapping("/{savingsId}/withdraw")
     public void withdrawFromSavings(@PathVariable Long savingsId, @RequestBody Double amount) {
         savingsService.withdrawFromSavings(savingsId, amount);
     }

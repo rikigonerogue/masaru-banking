@@ -17,16 +17,16 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .csrf(AbstractHttpConfigurer::disable)
-                .authorizeRequests(authorizeRequests -> authorizeRequests
-                        .antMatchers("/api/users/register", "/api/users/recover-password", "/api/users/reset-password").permitAll()  // Allow access to registration and password recovery endpoints
-                        .anyRequest().authenticated()
-                )
-                .formLogin(formLogin -> formLogin
+                .authorizeRequests(authorizeRequests -> authorizeRequests.anyRequest().permitAll()
+                       // .antMatchers("/api/users/register", "/api/users/recover-password", "/api/users/reset-password").permitAll()  // Allow access to registration and password recovery endpoints
+                     //   .anyRequest().authenticated()
+                );
+            /*    .formLogin(formLogin -> formLogin
                         .permitAll()
                 )
                 .logout(logout -> logout
                         .permitAll()
-                );
+                );*/
 
         return http.build();
     }
