@@ -1,12 +1,21 @@
 package com.sda.masarubanking.dto;
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+
 public class UserDTO {
+
+    @NotBlank(message = "Username is mandatory")
     private String username;
+
+    @NotBlank(message = "Password is mandatory")
     private String password;
+
+    @Email(message = "Email should be valid")
+    @NotBlank(message = "Email is mandatory")
     private String email;
 
-
-
+    // Getters and Setters
     public String getUsername() {
         return username;
     }
@@ -31,3 +40,10 @@ public class UserDTO {
         this.email = email;
     }
 }
+
+
+
+
+
+
+

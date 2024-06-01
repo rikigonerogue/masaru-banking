@@ -28,4 +28,8 @@ public class MasaruBankingApplication {
  		- implement method getAllAccounts,
  		- verify using postman.
 
+ 		// TODO - configure {accountId}, work on endpoints, write operation business
+ 		    logic(withdraw, deposit, balance check), verify endpoints using postman.
+
+
  */
