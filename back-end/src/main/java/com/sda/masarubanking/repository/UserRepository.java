@@ -1,6 +1,5 @@
 package com.sda.masarubanking.repository;
 
-
 import com.sda.masarubanking.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 

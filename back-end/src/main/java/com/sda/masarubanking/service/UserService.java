@@ -1,6 +1,5 @@
 package com.sda.masarubanking.service;
 
-
 import com.sda.masarubanking.converter.UserConverter;
 //import com.sda.masarubanking.dto.PasswordRecoveryRequest;
 //import com.sda.masarubanking.dto.PasswordResetRequest;
@@ -31,11 +30,11 @@ public class UserService {
         user.setPassword(passwordEncoder.encode(userDTO.getPassword()));
         User registeredUser = userRepository.save(user);
         return userConverter.convertToDTO(registeredUser);
-       
+
     }
 
 
-    }
+}
 
 
 

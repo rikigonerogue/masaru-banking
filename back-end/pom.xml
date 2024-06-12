@@ -11,7 +11,7 @@
 	<groupId>com.sda</groupId>
 	<artifactId>masarubanking</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>masarubanking</name>
+	<name>masaru-banking</name>
 	<description>Online banking application</description>
 	<properties>
 		<java.version>22</java.version>
@@ -50,7 +50,7 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+
 		<!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
 		<dependency>
 			<groupId>com.mysql</groupId>
@@ -62,6 +62,26 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter-validation</artifactId>
 			</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-annotations -->
+		<dependency>
+			<groupId>io.swagger.core.v3</groupId>
+			<artifactId>swagger-annotations</artifactId>
+			<version>2.2.22</version>
+		</dependency>
+		<dependency>
+			<groupId>com.itextpdf</groupId>
+			<artifactId>itextpdf</artifactId>
+			<version>5.5.13.2</version>
+		</dependency>
+
+
+
+
+
+
+
+
 		</dependencies>
 
 

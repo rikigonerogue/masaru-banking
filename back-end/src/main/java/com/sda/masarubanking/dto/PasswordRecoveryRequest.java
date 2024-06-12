@@ -1,7 +1,5 @@
 package com.sda.masarubanking.dto;
 
-
-
 public class PasswordRecoveryRequest {
     private String email;
 

@@ -1,7 +1,9 @@
 package com.sda.masarubanking.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
 
+@Getter
 @Entity
 public class User {
 
@@ -22,6 +24,9 @@ public class User {
     private String accountId; // Unique account ID for each user
 
 
+
+
+
    /* @Entity
     @Table(name = "users")
     public class setAccountId {
@@ -36,46 +41,26 @@ public class User {
         @Column(unique = true)
         private String accountId; //unique accId for each and every user*/
 
-        public Long getId() {
-            return id;
-        }
-
-        public void setId(Long id) {
-            this.id = id;
-        }
-
-        public String getUsername() {
-            return username;
-        }
-
-        public void setUsername(String username) {
-            this.username = username;
-        }
-
-        public String getPassword() {
-            return password;
-        }
-
-        public void setPassword(String password) {
-            this.password = password;
-        }
-
-        public String getEmail() {
-            return email;
-        }
-
-        public void setEmail(String email) {
-            this.email = email;
-        }
-
-        public String getAccountId() {
-            return accountId;
-        }
-
-        public void setAccountId(String accountId) {
-            this.accountId = accountId;
-        }
+    public void setId(Long id) {
+        this.id = id;
     }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setAccountId(String accountId) {
+        this.accountId = accountId;
+    }
+}
 
     /*
     public String getResetToken() {

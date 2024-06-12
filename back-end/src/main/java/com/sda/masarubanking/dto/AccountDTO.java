@@ -1,8 +1,5 @@
 package com.sda.masarubanking.dto;
 
-
-
-
 public class AccountDTO {
 
     private Long id;

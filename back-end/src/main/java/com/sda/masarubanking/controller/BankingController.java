@@ -12,21 +12,23 @@ public class BankingController {
     private BankingService bankingService;
 
 
-    @GetMapping("/account/{accountId}/balance")
+    @GetMapping("/account/1/balance")
     public double checkAccountBalance(@PathVariable Long accountId) {
         return bankingService.checkAccountBalance(accountId);
     }
 
-    @PostMapping("/account/{accountId}/deposit")
+    @PostMapping("/account/1/deposit")
     public void depositToAccount(@PathVariable Long accountId, @RequestBody Double amount) {
         bankingService.depositToAccount(accountId, amount);
     }
 
-    @PostMapping("/account/{accountId}/withdraw")
+    @PostMapping("/account/1/withdraw")
     public void withdrawFromAccount(@PathVariable Long accountId, @RequestBody Double amount) {
         bankingService.withdrawFromAccount(accountId, amount);
     }
+    @RestController
+    @RequestMapping("/api/statements")
+    public class BankStatementController {
 
+    }
 }
-
-
