@@ -1,26 +1,4 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #e5e5e5;
-  }
-  
-  h1, h2 {
-    color: #0047ab;
-  }
-  
-  button {
-    background-color: #0047ab;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #003b8b;
-  }
-  
-  form {
+form {
     background-color: white;
     padding: 2rem;
     border-radius: 0.5rem;
@@ -40,4 +18,3 @@ body {
     border: 1px solid #ccc;
     border-radius: 0.25rem;
   }
-  
