@@ -11,11 +11,13 @@ export class TransactionService {
   constructor(private http: HttpClient) {}
 
   deposit(amount: number): Observable<any> {
-    return this.http.post(`http://localhost:4200/deposit`, { amount });
+    return this.http.post(`${this.baseUrl}/deposit`, { amount });
   }
 
   withdraw(amount: number): Observable<any> {
-    return this.http.post(`http://localhost8080/withdraw`, { amount });
+    return this.http.post(`${this.baseUrl}/withdraw`, { amount });
   }
 }
+
+
 
